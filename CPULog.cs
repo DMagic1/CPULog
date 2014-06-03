@@ -10,9 +10,9 @@ namespace CPULog
         private int updatedFrameCount = 0;
         private int time = 0;
 
-        Timer cTimer;
-        ConfigNode node = new ConfigNode();
-        string path = Path.Combine(new DirectoryInfo(KSPUtil.ApplicationRootPath).FullName, "GameData/CPULog.txt").Replace("\\", "/");
+        private Timer cTimer;
+        private ConfigNode node = new ConfigNode();
+        private string path = Path.Combine(new DirectoryInfo(KSPUtil.ApplicationRootPath).FullName, "GameData/CPUDatabase/CPULog.txt").Replace("\\", "/");
 
         private void Start()
         {
